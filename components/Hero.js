@@ -10,8 +10,8 @@ const Hero = () => {
            <h2 className='md:text-2xl text-xl font-bold text-gray-500 '>Interested in training with us?</h2>
            <button className='bg-red-400 w-[200px] rounded-md font-medium my-6 py-3'>Sign Up Here</button>
         </div>
-        <div className='flex justify-center'>
-          <Image width={500} height={700} src={MuayThai} alt='/'/>
+        <div className='flex justify-center h-screen '>
+          <Image src={MuayThai} alt='/'/>
         </div>
         </div>
         
