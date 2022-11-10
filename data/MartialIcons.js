@@ -1,4 +1,4 @@
-const Icons=[
+const MartialIcons=[
     {
         name: 'MMA',
         imageUrl: 'public/assets/icons/MMA-icon.png',
@@ -25,4 +25,4 @@ const Icons=[
     },
 ];
 
-export { Icons };
+export { MartialIcons };
