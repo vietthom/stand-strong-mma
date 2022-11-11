@@ -13,7 +13,7 @@ import JKD from '../public/assets/icons/JKD.png'
 
 const Services = () =>{
     return(
-        <div className='max-w-[1240px] mx-auto w-full h-screen rounded-lg mt-[64px] '>
+        <div className='max-w-[1240px] mx-auto w-full h-screen rounded-lg mt-[32px] '>
             <h1 className='font-bold md:text-6xl sm:text-5xl text-3xl text-red-400 text-center py-4'>Start your journey</h1>
             <div className= 'flex flex-col items-center snap-start text-white'>
                  <p className='py-2 text-xl'>True to the spirit of mixed martial arts, we offer a variety of disciplines to help meet your personal goals.</p>
