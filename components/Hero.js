@@ -11,7 +11,7 @@ const Hero = () => {
            <button className='bg-red-400 w-[200px] rounded-md font-medium my-6 py-3'>Sign Up Here</button>
         </div>
         <div className='flex justify-center h-screen '>
-          <Image className='hidden md:block' src={MuayThai} alt='/'/>
+          <Image style={{width:'auto', height:'auto'}} className='hidden md:block' src={MuayThai} alt='/'/>
         </div>
         </div>
         
