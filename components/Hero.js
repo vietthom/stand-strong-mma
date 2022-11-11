@@ -13,7 +13,7 @@ const Hero = () => {
         <div className='flex justify-center h-screen '>
           <Image style={{width:'auto', height:'auto'}} className='hidden md:block' src={MuayThai} alt='/'/>
         </div>
-        </div>
+    </div>
         
   )
 }
