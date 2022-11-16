@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import Link from 'next/link';
+
 
 export const Navbar = () => {
     const [nav, setNav]=useState(false);
@@ -11,11 +13,11 @@ export const Navbar = () => {
     <div className="text-white container mx-auto px-4 h-24 flex items-center">
         <h1 className="w-full font-bold text-3xl text-red-400">Stand Strong MMA</h1>
         <ul className="hidden md:flex">
-            <li className="p-4">Home</li>
-            <li className="p-4">About</li>
-            <li className="p-4">Classes</li>
-            <li className="p-4">Membership</li>
-            <li className="p-4">Contact</li>
+            <li className="p-4"><Link href='/'>Home</Link></li>
+            <li className="p-4"><Link href='/about'>About</Link></li>
+            <li className="p-4"><Link href='/classes'>Classes</Link></li>
+            <li className="p-4"><Link href='/membership'>Membership</Link></li>
+            <li className="p-4"><Link href='/contact'>Contact</Link></li>
         </ul>
         <div onClick={handleNav} className='block md:hidden'>
           {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
