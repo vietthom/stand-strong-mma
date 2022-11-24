@@ -32,6 +32,12 @@ const about = () => {
       </div>
       <div className='w-full pt-10'>
         <h1 className='font-bold text-3xl text-center uppercase'>meet our instructors</h1>
+        <div>
+          <div>
+            Image
+            <h2>Name</h2>
+          </div>
+        </div>
       </div>
     </div>
   )
