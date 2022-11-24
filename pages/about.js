@@ -1,8 +1,8 @@
-import React from 'react'
-import Banner from '../components/Banner'
-import Image from 'next/image'
+import React from 'react';
+import Banner from '../components/Banner';
+import Image from 'next/image';
 import Gym from '../public/assets/gym.jpeg';
-
+import { Instructors } from '../data/instructors';
 
 const about = () => {
   return (
@@ -32,11 +32,18 @@ const about = () => {
       </div>
       <div className='w-full pt-10'>
         <h1 className='font-bold text-3xl text-center uppercase'>meet our instructors</h1>
-        <div>
-          <div>
-            Image
-            <h2>Name</h2>
-          </div>
+        <div className='grid md:grid-cols-2'>
+          {Instructors.map((instructor) => (
+            <>
+            <div key={instructor}>
+              <h2>{instructor.name}</h2>
+              <Image width={500} height={500} src={instructor.imageUrl} alt='instructor image'/>
+            </div>
+            <div>
+              <p>{instructor.bio}</p>
+            </div>
+            </>
+          ))}
         </div>
       </div>
     </div>
