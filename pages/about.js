@@ -17,29 +17,32 @@ const about = () => {
           Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. Metus aliquam eleifend mi in nulla. 
           Tortor posuere ac ut consequat. Eu facilisis sed odio morbi quis commodo odio.</p>
       </div>
-      <div className='w-full grid md:grid-cols-2'>
+
+      <div className='w-full grid md:grid-cols-2 justify-center items-center'>
         <div>
-        <h1 className='font-bold text-3xl uppercase'>Our Facility</h1>
-        <p className='pt-2'>Augue ut lectus arcu bibendum at varius vel pharetra vel. Et sollicitudin ac orci phasellus egestas tellus. Sagittis orci a scelerisque purus semper eget duis at tellus. 
-          Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. Metus aliquam eleifend mi in nulla. 
-          Tortor posuere ac ut consequat. Eu facilisis sed odio morbi quis commodo odio. Augue ut lectus arcu bibendum at varius vel pharetra vel. Et sollicitudin ac orci phasellus egestas tellus. Sagittis orci a scelerisque purus semper eget duis at tellus. 
-          Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. Metus aliquam eleifend mi in nulla. 
-          Tortor posuere ac ut consequat. Eu facilisis sed odio morbi quis commodo odio. Augue ut lectus arcu bibendum at varius vel pharetra vel. Et sollicitudin ac orci phasellus egestas tellus. Sagittis orci a scelerisque purus semper eget duis at tellus. 
-          Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. Metus aliquam eleifend mi in nulla. 
-          Tortor posuere ac ut consequat. Eu facilisis sed odio morbi quis commodo odio.</p>
+          <h1 className='font-bold text-3xl uppercase'>Our Facility</h1>
+          <p className='pt-2'>Augue ut lectus arcu bibendum at varius vel pharetra vel. Et sollicitudin ac orci phasellus egestas tellus. Sagittis orci a scelerisque purus semper eget duis at tellus. 
+            Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. Metus aliquam eleifend mi in nulla. 
+            Tortor posuere ac ut consequat. Eu facilisis sed odio morbi quis commodo odio. Augue ut lectus arcu bibendum at varius vel pharetra vel. Et sollicitudin ac orci phasellus egestas tellus. Sagittis orci a scelerisque purus semper eget duis at tellus. 
+            Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. Metus aliquam eleifend mi in nulla. 
+            Tortor posuere ac ut consequat. Eu facilisis sed odio morbi quis commodo odio. Augue ut lectus arcu bibendum at varius vel pharetra vel. Et sollicitudin ac orci phasellus egestas tellus. Sagittis orci a scelerisque purus semper eget duis at tellus. 
+            Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. Metus aliquam eleifend mi in nulla. 
+            Tortor posuere ac ut consequat. Eu facilisis sed odio morbi quis commodo odio.</p>
         </div>
         <Image src={Gym} alt='Gym'/>
       </div>
-      <div className='w-full pt-10'>
+      <div className='w-full py-10'>
         <h1 className='font-bold text-3xl text-center uppercase'>meet our instructors</h1>
         <div className='grid md:grid-cols-2'>
           {Instructors.map((instructor) => (
             <>
-            <div key={instructor}>
-              <h2>{instructor.name}</h2>
-              <Image width={500} height={500} src={instructor.imageUrl} alt='instructor image'/>
+            <div className='py-10' key={instructor}>
+              <h2 className='text-2xl pb-4'>{instructor.name}</h2>
+              <div>
+                <Image width={400} height={400} src={instructor.imageUrl} alt='instructor image'/>
+              </div>
             </div>
-            <div>
+            <div className='flex justify-center items-center'>
               <p>{instructor.bio}</p>
             </div>
             </>
