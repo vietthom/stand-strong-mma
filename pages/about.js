@@ -37,7 +37,7 @@ const about = () => {
           {Instructors.map((instructor) => (
             <>
             <div className='py-10' key={instructor}>
-              <h2 className='text-2xl pb-4'>{instructor.name}</h2>
+              <h2 className='uppercase font-bold text-2xl pb-4 text-red-400'>{instructor.name}</h2>
               <div>
                 <Image width={400} height={400} src={instructor.imageUrl} alt='instructor image'/>
               </div>
