@@ -1,9 +1,10 @@
 import React from 'react'
+import Schedule from '../components/Schedule'
 
 const classes = () => {
   return (
     <div>
-        <h1 className='text-red-500'>This is the classes page</h1>
+        <Schedule />
     </div>
   )
 }
