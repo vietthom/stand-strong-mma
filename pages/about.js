@@ -33,13 +33,13 @@ const about = () => {
       </div>
       <div className='w-full py-10'>
         <h1 className='font-bold text-3xl text-center uppercase'>meet our instructors</h1>
-        <div className='grid md:grid-cols-2'>
+        <div className='grid md:grid-cols-2 gap-0'>
           {Instructors.map((instructor) => (
             <>
-            <div className='py-10' key={instructor}>
+            <div key={instructor}>
               <h2 className='uppercase font-bold text-2xl pb-4 text-red-400'>{instructor.name}</h2>
-              <div>
-                <Image width={400} height={400} src={instructor.imageUrl} alt='instructor image'/>
+              <div className='w-[400px] h-[400px] relative'>
+                <Image styles={{objectFit:'cover'}} fill src={instructor.imageUrl} alt='instructor image'/>
               </div>
             </div>
             <div className='flex justify-center items-center'>
