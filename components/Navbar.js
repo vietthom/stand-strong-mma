@@ -11,7 +11,9 @@ export const Navbar = () => {
     }
   return (
     <div className="text-white container mx-auto px-4 h-24 flex items-center">
-        <h1 className="w-full font-bold text-3xl text-red-400">Stand Strong MMA</h1>
+        <h1 className="w-full font-bold text-3xl text-red-400">
+          <Link href='/'>Stand Strong MMA</Link>
+        </h1>
         <ul className="hidden md:flex">
             <li className="p-4"><Link href='/'>Home</Link></li>
             <li className="p-4"><Link href='/about'>About</Link></li>
