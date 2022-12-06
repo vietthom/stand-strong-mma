@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import Kickboxing from '../public/assets/icons/kickboxing-icon.png'
 import Grappling from '../public/assets/icons/grappling-icon.png'
@@ -20,28 +21,40 @@ const Services = () =>{
                 <Image className='hidden md:block' src={BJJ} alt='/'/>
                 <ul className='w-full mx-auto grid md:grid-cols-3 md:grid-rows-2 gap-8 text-white grid-cols-2 grid-rows-2'>
                         <li className=' border-2 rounded-lg hover:scale-105 duration-100 '>
-                            <Image className=''src={Kickboxing} alt='/'/>
-                            <p className='font-bold text-center text-sm'>Kickboxing</p>
+                            <Link href='/classes'>
+                                <Image className=''src={Kickboxing} alt='/'/>
+                                <p className='font-bold text-center text-sm'>Kickboxing</p>
+                            </Link>
                          </li>
                          <li className='border-2 rounded-lg  hover:scale-105 duration-100'>
-                            <Image src={MMA} alt='/'/>
-                            <p className='font-bold text-center'>MMA</p>
+                            <Link href='/classes'>
+                                <Image src={MMA} alt='/'/>
+                                <p className='font-bold text-center'>MMA</p> 
+                            </Link>
                          </li>
                          <li className='border-2 rounded-lg  hover:scale-105 duration-100'>
-                            <Image src={Grappling} alt='/'/>
-                            <p className='font-bold text-center'>Grappling</p>
+                            <Link href='/classes'>
+                                <Image src={Grappling} alt='/'/>
+                                <p className='font-bold text-center'>Grappling</p>
+                            </Link>
                         </li>
                          <li className=' border-2 rounded-lg  hover:scale-105 duration-100'>
-                            <Image src={MuayThai} alt='/'/>
-                            <p className='font-bold text-center'>Muay Thai</p>
+                            <Link href='/classes'>
+                                <Image src={MuayThai} alt='/'/>
+                                <p className='font-bold text-center'>Muay Thai</p>
+                            </Link>
                          </li>
                          <li className='border-2 rounded-lg  hover:scale-105 duration-100'>
-                            <Image src={Silat} alt='/'/>
-                            <p className='font-bold text-center'>Pencak Silat</p>
+                            <Link href='/classes'>
+                                <Image src={Silat} alt='/'/>
+                                <p className='font-bold text-center'>Pencak Silat</p>
+                            </Link>
                          </li>
                          <li className='border-2 rounded-lg  hover:scale-105 duration-100'>
-                            <Image src={JKD} alt='/'/>
-                            <p className='font-bold text-center'>Jeet Kune Do</p>
+                            <Link href='/classes'>
+                                <Image src={JKD} alt='/'/>
+                                <p className='font-bold text-center'>Jeet Kune Do</p>
+                            </Link>
                          </li>
                      </ul>
             </div>
