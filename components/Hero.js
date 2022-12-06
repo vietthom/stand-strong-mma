@@ -11,7 +11,7 @@ const Hero = () => {
            <p className='md:text-3xl sm:text-2xl text-xl font-bold py-4'>We believe in creating a safe, supportive, and inclusive space for all skill levels. We love training and teaching martial arts, and look forward to sharing our passion with you! </p>
            <h2 className='md:text-2xl text-xl font-bold text-gray-500 '>Interested in training with us?</h2>
            <button className='bg-red-400 w-[200px] rounded-md font-medium my-6 py-3'>
-
+            <Link href='/membership' >Sign Up Here</Link>
            </button>
         </div>
         <div className='flex justify-center overflow-auto'>
