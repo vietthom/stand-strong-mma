@@ -4,10 +4,10 @@ import { FaFacebook, FaTwitter, FaGithub } from 'react-icons/fa';
 
 const navigation={
     main: [
-        {name: 'About', href: '#'}, 
-        {name: 'Classes', href: '#'},
-        {name: 'Membership', href: '#'},
-        {name: 'Contact', href: '#'},
+        {name: 'About', href: '/about'}, 
+        {name: 'Classes', href: '/classes'},
+        {name: 'Membership', href: '/membership'},
+        {name: 'Contact', href: '/contact'},
     ],
     social: [
         {
@@ -47,7 +47,7 @@ const Footer = () => {
         <div className='-mx-5 -my-2 flex flew-wrap justify-center' aria-label="Footer">
             {navigation.main.map((item) =>(
                 <div key={item.name} className='px-5 py-2'>
-                    <a href={item.href} className='text-base text-gray-500 hover:text-gray-900'>
+                    <a href={item.href} className='text-base text-gray-500 hover:text-red-400'>
                         {item.name}
                     </a>
                 </div>
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
         <div className='mt-8 flex justify-center space-x-6'>
             {navigation.social.map((item)=>(
-                <a key={item.name} href={item.href} className='text-gray-400 hover:text-gray-500'>
+                <a key={item.name} href={item.href} className='text-gray-400 hover:text-red-400'>
                     <span className='sr-only'>{item.name}</span>
                     <item.icon />
                 </a>
