@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import Banner from '../components/Banner';
 import Image from 'next/image';
@@ -38,8 +39,12 @@ const about = () => {
             <>
             <div key={instructor}>
               <h2 className='uppercase font-bold text-2xl pb-4 text-red-400'>{instructor.name}</h2>
-              <div className='w-[400px] h-[400px] relative'>
-                <Image styles={{objectFit:'cover'}} fill src={instructor.imageUrl} alt='instructor image'/>
+              <div className="">
+                <img 
+                  src={instructor.imageUrl}
+                  alt="instructor image"
+                  className="object-cover w-[75%] h-[75%]"
+                />
               </div>
             </div>
             <div className='flex justify-center items-center'>
