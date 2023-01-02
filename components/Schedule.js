@@ -2,7 +2,7 @@ import React from 'react'
 
 const Schedule = () => {
   return (
-    <div className='container mx-auto relative'>
+    <div className='container mx-auto'>
         <table className='w-full text-sm text-center bg-white text-black'>
             <thead className='uppercase border-b border-black'>
                 <tr>
