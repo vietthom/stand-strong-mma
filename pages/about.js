@@ -3,12 +3,17 @@ import React from 'react';
 import Banner from '../components/Banner';
 import Image from 'next/image';
 import Gym from '../public/assets/gym.jpeg';
+import Winner from '../public/assets/winner.jpg';
 import { Instructors } from '../data/instructors';
+
 
 const about = () => {
   return (
     <div className='container mx-auto px-10 text-white'>
-      <Banner />
+      <Banner 
+       imgUrl={Winner}
+       title="About Us"
+      />  
       <div className='w-full py-10'>
         <h1 className='font-bold text-3xl uppercase'>Who are we?</h1>
         <p className='pt-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
